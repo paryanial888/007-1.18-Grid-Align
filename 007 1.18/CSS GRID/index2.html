@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID 2</title>
+    <style>
+        .wrapper {
+            display: grid;
+            /* grid-template-columns: 1fr 2fr 1fr; */
+            grid-template-columns: repeat(3, 1fr);
+            grid-gap: 1em;
+
+            /* grid-auto-rows: 100px; */
+            grid-auto-rows: minmax(100px, auto);
+        }
+
+        .nested {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: 70px;
+            grid-gap:1em;
+        }
+
+        .wrapper > div {
+            background: #eee;
+            padding: 1em;
+        }
+
+        .wrapper > div:nth-child(odd) {
+            background: #ddd;
+        }
+
+        .nested > div{
+            border:#333 1px solid;
+            padding:1em;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum quas perferendis voluptates quo explicabo hic. Officia ad excepturi nobis tempore ea voluptate quisquam consequuntur suscipit numquam, veniam libero eum deserunt nostrum! Repellat, voluptates! Accusantium voluptatibus, quas rerum aut architecto consequuntur! Ducimus deleniti laboriosam voluptatem culpa temporibus debitis ratione quo corrupti facilis officia cumque tempore accusamus quod in labore, odio nihil voluptatum dolorem rem iure laudantium dolorum! Autem aliquam fugit non officia, sed iusto! Nisi nobis repellat, ullam voluptatibus nulla autem quis harum ea accusantium sunt. Tempore sit tenetur laborum! Non suscipit labore quisquam quasi iure cum dolorem! Veritatis odit sed voluptate nemo minima, laudantium id, maxime fuga omnis explicabo ea veniam. Id velit esse tenetur nostrum aliquam ex assumenda cupiditate deleniti! Fugit obcaecati ipsa quae sit iste quas dolore blanditiis veritatis nesciunt temporibus quod, doloremque expedita dignissimos enim similique ab non a laborum, doloribus deleniti aliquam voluptatem tenetur! Rem ea quibusdam quisquam facere. Atque sunt velit quisquam, illum mollitia hic officia nihil dolore sit consectetur neque adipisci fuga, dolor exercitationem doloribus laboriosam voluptates nisi doloremque aliquam. Ipsum enim nobis laudantium illum esse corporis reiciendis ea pariatur error, aliquid facilis repudiandae natus minima omnis, molestias temporibus ratione, architecto possimus cumque iure repellendus facere. Recusandae, consequuntur quo rem corporis quam ipsum assumenda porro, soluta, quaerat iure nulla exercitationem laudantium adipisci. Enim esse sint delectus quae magni, voluptatem ab ex praesentium molestias! Aut officiis itaque inventore, quia veniam iusto, corrupti eos ipsam error deleniti repudiandae voluptas temporibus consequatur numquam dicta laborum maxime. Sunt, architecto eius. Vitae mollitia quidem optio expedita doloremque officia quia architecto distinctio asperiores quos, veniam dicta odio qui nesciunt consequuntur, laudantium provident saepe unde labore, modi accusamus similique voluptatibus delectus! Saepe nobis animi veniam accusantium minus ab reiciendis beatae eveniet exercitationem esse nesciunt, nihil autem temporibus voluptates, aliquam repellendus a!</div>
+        <div class="nested">
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+            <div>Lorem</div>
+        </div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+        <div>Lorem ipsum dolor sit.</div>
+    </div>
+</body>
+</html>
